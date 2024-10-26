@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+
+    box-sizing: border-box;
+    background-color: aliceblue;
+    width: 30%;
+    height: 300px;
+    border:  1px solid blue;
+
+}

@@ -20,11 +20,19 @@
 }
 .div1{
     background: orange;
-    opacity: 0.8;
+    opacity: 0.8;    animation-name: rotateDiv ;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 .div2{
     background: white;
-    opacity: 0.9;
+    opacity: 0.9;    animation-name: rotateDiv ;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
 /* Position : static | relative | absolute | fixed */
@@ -33,18 +41,28 @@
     position: static;
     top: 100px;
     /* z-index: -1; */
-    animation-name: rotate ;
+    animation-name: rotateDiv ;
     animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
 @keyframes rotateDiv{
+    
     0%{
-    transform: rotateZ('180deg');
+    transform: rotateZ(0deg);
+    }
+    25%{
+    transform: rotateZ(90deg);
     }
     50%{
-    transform: rotateZ('240deg');
+    transform: rotateZ(180deg);
+    }
+    75%{
+    transform: rotateZ(240deg);
     }
     100%{
-    transform: rotateZ('360deg');
+    transform: rotateZ(360deg);
     }
 }
