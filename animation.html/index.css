@@ -1,0 +1,50 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+.main{
+    border: 1px solid black;
+    width: 30%;
+    background: blanchedalmond;
+    color: black;
+    height: 3000px;
+    padding: 20px;
+    text-align: center;
+}
+.main div{
+    height: 80px;
+    border: 1px solid black;
+}
+.div1{
+    background: orange;
+    opacity: 0.8;
+}
+.div2{
+    background: white;
+    opacity: 0.9;
+}
+
+/* Position : static | relative | absolute | fixed */
+.div3{
+    background: green;
+    position: static;
+    top: 100px;
+    /* z-index: -1; */
+    animation-name: rotate ;
+    animation-duration: 4s;
+}
+
+@keyframes rotateDiv{
+    0%{
+    transform: rotateZ('180deg');
+    }
+    50%{
+    transform: rotateZ('240deg');
+    }
+    100%{
+    transform: rotateZ('360deg');
+    }
+}
